@@ -13,31 +13,32 @@ let NFTs = []
 // this function will take in some values as parameters, create an
 // NFT object using the parameters passed to it for its metadata, 
 // and store it in the variable above.
-function mintNFT (name , age , height) {
-    let NFT = {
-        name : name,
-        age : age,
-        height: height
-    };
-    NFTs.push (NFT);
-
+function mintNFT (name, age , height) {
+    
+let NFT = {
+    name: name,
+    age: age,
+    height: height
+};
+NFTs.push(NFT);
 
 }
 
 // create a "loop" that will go through an "array" of NFT's
 // and print their metadata with console.log()
 function listNFTs () {
-    for (let i=0 ; i< NFTs.length; i++) {
-        console.log("name :" + NFTs[i].name);
-        console.log("age :" + NFTs[i].age);
-        console.log("height :" + NFTs[i].height);
-    }
+    for ( let i=0 ;i< NFTs.length; i++) {
+        console.log("name:"+NFTs[i].name);
+        console.log("age:"+NFTs[i].age);
+        console.log("height:"+NFTs[i].height);
 
+    }
+    
 }
 
 // print the total number of NFTs we have minted to the console
 function getTotalSupply() {
-console.log("total supply :" + NFTs.length);
+console.log("total supply:" + NFTs.length);
 }
 
 // call your functions below this line

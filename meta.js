@@ -30,7 +30,7 @@ function listNFTs () {
     for (let i=0 ; i< NFTs.length; i++) {
         console.log("name :" + NFTs[i].name);
         console.log("age :" + NFTs[i].age);
-        console.log("height :" + NFTs[i].height)
+        console.log("height :" + NFTs[i].height);
     }
 
 }
